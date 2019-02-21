@@ -63,6 +63,7 @@ namespace ADT
             }
         }
 
+
         private class Node
         {
             public T Data { get; set; }
