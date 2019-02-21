@@ -12,13 +12,11 @@ namespace ADT
         private class MyLinkedListEnumerator : IEnumerator
         {
             private Node _head;
-            private Node reset;
             private Node temp;
 
             public MyLinkedListEnumerator(Node head)
             {
                 _head = head;
-                reset = head;
                 temp = null;
             }
             public T Current
@@ -59,7 +57,7 @@ namespace ADT
             }
             public void Reset()
             {
-                _head = reset;
+                _head = null;
             }
         }
 
